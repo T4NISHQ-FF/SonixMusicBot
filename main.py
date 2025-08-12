@@ -65,7 +65,7 @@ API_ID = int(os.environ.get("API_ID"))
 API_HASH = os.environ.get("API_HASH")
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
 ASSISTANT_SESSION = os.environ.get("ASSISTANT_SESSION")
-OWNER_ID = int(os.getenv("OWNER_ID", "5268762773"))
+OWNER_ID = int(os.getenv("OWNER_ID", "5591891887"))
 
 # ——— Monkey-patch resolve_peer ——————————————
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
@@ -178,7 +178,7 @@ def safe_handler(func):
             )
             print(error_text)
             # Log the error to support
-            await bot.send_message(5268762773, error_text)
+            await bot.send_message(5591891887, error_text)
     return wrapper
 
 
@@ -316,7 +316,7 @@ async def fetch_youtube_link_backup(query):
     except Exception as e:
         raise Exception(f"Backup Search API error: {e}")
     
-BOT_NAME = os.environ.get("BOT_NAME", "Frozen Music")
+BOT_NAME = os.environ.get("BOT_NAME", "Sonix Music")
 BOT_LINK = os.environ.get("BOT_LINK", "https://t.me/vcmusiclubot")
 
 from pyrogram.errors import UserAlreadyParticipant, RPCError
@@ -920,7 +920,7 @@ async def fallback_local_playback(chat_id: int, message: Message, song_info: dic
         one_line = _one_line_title(song_info["title"])
         base_caption = (
             "<blockquote>"
-            "<b>🎧 Frozen ✘ Music Streaming</b> (Local Playback)\n\n"
+            "<b>🎧 🎧 Sonix ✘ Music Streaming</b> (Local Playback)\n\n"
             f"❍ <b>Title:</b> {one_line}\n"
             f"❍ <b>Requested by:</b> {song_info['requester']}"
             "</blockquote>"
