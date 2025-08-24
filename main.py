@@ -1555,7 +1555,7 @@ if __name__ == "__main__":
         sys.exit(1)
 
     me = bot.get_me()
-    BOT_NAME = me.first_name or "Frozen Music"
+    BOT_NAME = me.first_name or "Sonix Music"
     BOT_USERNAME = me.username or os.getenv("BOT_USERNAME", "vcmusiclubot")
     BOT_LINK = f"https://t.me/{BOT_USERNAME}"
 
